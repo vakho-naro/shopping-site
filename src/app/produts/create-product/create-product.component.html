@@ -1,0 +1,42 @@
+<h2>Create product</h2>
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Holy guacamole!</strong> Restourant has been added
+  <button (click)="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<form class="needs-validation" (submit)="addNewProduct(addProductForm)" #addProductForm="ngForm">
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationTooltip01">product name</label>
+        <input type="text" class="form-control" value="enter product name" required name="name" ngModel>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationTooltip02">price</label>
+      <input type="text" class="form-control" value="price" required name="price" ngModel>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationTooltip02">category id</label>
+      <input type="text" class="form-control" value="category" required name="category" ngModel>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationTooltip03">description</label>
+      <input type="text" class="form-control" value="product description" name="description" required ngModel>
+    </div>
+  </div>
+    <div class="form-row">   
+      <div class="col-md-3 mb-3">
+        <label for="validationTooltip04">rating</label>
+        <select class="custom-select" required name="rating" ngModel>
+          <option selected disabled value="">Choose...</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Create Product</button>
+  </form>

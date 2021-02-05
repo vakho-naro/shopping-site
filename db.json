@@ -1,0 +1,84 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Headphones"
+    },
+    {
+      "id": 2,
+      "name": "Mobile Phones"
+    },
+    {
+      "id": 3,
+      "name": "Laptops"
+    },
+    {
+      "id": 4,
+      "name": "Tablets"
+    },
+    {
+      "id": 5,
+      "name": "Aydio Systems"
+    },
+    {
+      "id": 6,
+      "name": "Smart Watches"
+    }
+  ],
+  "products": [
+    {
+      "id": 2,
+      "name": "headphone-2",
+      "price": 150,
+      "description": "product desqription",
+      "rating": 5,
+      "is_avialable": true,
+      "category_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Samsung",
+      "price": 100,
+      "description": "product desqription",
+      "rating": 4,
+      "is_avialable": true,
+      "category_id": 2
+    },
+    {
+      "id": 4,
+      "name": "Iphone",
+      "price": 150,
+      "description": "product desqription",
+      "rating": 5,
+      "is_avialable": true,
+      "category_id": 2
+    },
+    {
+      "name": "Acer",
+      "price": "2222",
+      "description": "seefefe",
+      "rating": "4",
+      "is_avialable": true,
+      "category_id": "3",
+      "id": 5
+    },
+    {
+      "name": "Asus",
+      "price": "2300",
+      "description": "seefefe",
+      "rating": "3",
+      "is_avialable": true,
+      "category_id": "3",
+      "id": 5
+    },
+    {
+      "name": "headphone-22",
+      "price": "22",
+      "description": "listen music",
+      "rating": "3",
+      "is_avialable": true,
+      "category_id": "1",
+      "id": 6
+    }
+  ]
+}
